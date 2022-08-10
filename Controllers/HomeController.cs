@@ -1,21 +1,25 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using mercedes.Models;
+using mercedes.Models.Entities;
 
 namespace mercedes.Controllers;
 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private NorthwindContext context;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(NorthwindContext _context)
     {
-        _logger = logger;
+        context = _context;
     }
 
     public IActionResult Index()
     {
-        return View();
+        List<Region> list =  context.Regions.ToList();
+ 
+        return View(list);
     }
 
     public IActionResult Privacy()
