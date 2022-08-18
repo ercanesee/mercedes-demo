@@ -2,10 +2,26 @@ using mercedes.Models;
 using mercedes.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 
+using OpenTelemetry.Resources;
+using OpenTelemetry.Trace;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddOpenTelemetryTracing(configuration =>
+{
+    configuration
+        .AddAspNetCoreInstrumentation()
+        .SetResourceBuilder(ResourceBuilder.CreateDefault()
+            .AddService("MyWebApp")
+            .AddTelemetrySdk())
+        .AddOtlpExporter(options =>
+        {
+            options.Endpoint = new Uri("http://172.17.0.4:4317"); // SigNoz Endpoint
+        });
+});
 
 
 IConfiguration configuration = new ConfigurationBuilder()
