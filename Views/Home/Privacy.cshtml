@@ -1,6 +1,10 @@
-﻿@{
+﻿@model List<mercedes.Models.Entities.Category>
+@{
     ViewData["Title"] = "Privacy Policy";
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+@foreach (var item in Model)
+{
+    <p> @item.CategoryName </p> <p> @item.Description</p> 
+}

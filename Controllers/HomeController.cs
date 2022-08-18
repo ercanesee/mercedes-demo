@@ -24,7 +24,8 @@ public class HomeController : Controller
 
     public IActionResult Privacy()
     {
-        return View();
+        List<Category> cat = context.Categories.ToList();
+        return View(cat);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
