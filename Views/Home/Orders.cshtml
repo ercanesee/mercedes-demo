@@ -1,0 +1,12 @@
+@model List<mercedes.Models.Entities.Order>
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+@foreach (var item in Model)
+{
+    <p> @item.CustomerId </p> <p> @item.Customer</p> 
+    <p> @item.EmployeeId </p> <p> @item.Employee</p> 
+    <p> @item.ShipCity </p> <p> @item.ShipAddress</p> 
+}
