@@ -16313,6 +16313,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\EE\\Desktop\\mercedes-demo\\mercedes\\Views\\Home\\Orders.cshtml",
+      "TargetPath": "Views\\Home\\Orders.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\EE\\Desktop\\mercedes-demo\\mercedes\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"

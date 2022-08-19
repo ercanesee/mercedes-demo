@@ -22,6 +22,12 @@ public class HomeController : Controller
         return View(list);
     }
 
+    public IActionResult Orders()
+    {
+        List<Order> list =  context.Orders.ToList();
+ 
+        return View(list);
+    }
     public IActionResult Privacy()
     {
         List<Category> cat = context.Categories.ToList();
