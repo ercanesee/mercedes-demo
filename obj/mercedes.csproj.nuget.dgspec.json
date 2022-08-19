@@ -40,6 +40,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Elastic.Apm": {
+              "target": "Package",
+              "version": "[1.16.1, )"
+            },
+            "Elastic.Apm.AspNetCore": {
+              "target": "Package",
+              "version": "[1.16.1, )"
+            },
             "Elastic.Apm.NetCoreAll": {
               "target": "Package",
               "version": "[1.16.1, )"

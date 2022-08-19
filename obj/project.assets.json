@@ -7992,6 +7992,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Elastic.Apm >= 1.16.1",
+      "Elastic.Apm.AspNetCore >= 1.16.1",
       "Elastic.Apm.NetCoreAll >= 1.16.1",
       "Microsoft.EntityFrameworkCore >= 6.0.2",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.2",
@@ -8041,6 +8043,14 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Elastic.Apm": {
+            "target": "Package",
+            "version": "[1.16.1, )"
+          },
+          "Elastic.Apm.AspNetCore": {
+            "target": "Package",
+            "version": "[1.16.1, )"
+          },
           "Elastic.Apm.NetCoreAll": {
             "target": "Package",
             "version": "[1.16.1, )"
