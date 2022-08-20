@@ -1,0 +1,10 @@
+@model List<mercedes.Models.Entities.Region>
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+@foreach (var item in Model)
+{
+    <p> @item.Territories </p> <p> @item.RegionDescription</p> 
+}

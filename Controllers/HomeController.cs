@@ -28,6 +28,12 @@ public class HomeController : Controller
  
         return View(list);
     }
+    public IActionResult Region()
+    {
+        List<Region> list =  context.Regions.ToList();
+ 
+        return View(list);
+    }
     public IActionResult Privacy()
     {
         List<Category> cat = context.Categories.ToList();

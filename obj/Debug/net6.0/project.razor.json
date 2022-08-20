@@ -16308,6 +16308,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\EE\\Desktop\\mercedes-demo\\mercedes\\Views\\Home\\Region.cshtml",
+      "TargetPath": "Views\\Home\\Region.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\EE\\Desktop\\mercedes-demo\\mercedes\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
